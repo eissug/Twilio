@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
-    <Say voice="woman">Please leave a message after the tone.</Say>
-    <Record maxLength="20" />
+    <Say voice="woman" language="en">
+        Please leave a message at the beep. 
+        Press the star key when finished. 
+    </Say>
+    <Record
+        maxLength="60"
+        timeout="5"
+        finishOnKey="*"
+        />
+    <Say voice="woman" language="en">I did not receive a recording</Say>
 </Response>
+
+
